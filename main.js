@@ -21,11 +21,11 @@ console.log(filterOutOdds(2, 3, 4, 5));
 //2. Write a function called findMin that accepts a variable number of arguments and returns the smallest argument.
 //Make sure to do this using the rest and spread operator.
 
+const findMin = (...nums) => nums.reduce((accum, nextVal) => nextVal < accum ? nextVal : accum)
 
-findMin(1, 4, 12, -3) // -3
-findMin(1, -1) // -1
-findMin(3, 1) // 1
-
+console.log(findMin(1, 4, 12, -3)) // -3
+console.log(findMin(1, -1)) // -1
+console.log(findMin(3, 1)) // 1
 
 
 //3. mergeObjects
